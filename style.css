@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Comica'; /* Give your font a name */
+    src: url('./fonts/Comica\ BD.ttf') format('woff2'), /* Specify the path to your font file */
+         url('path/to/your/font.woff') format('woff'); /* You can provide multiple file formats for compatibility */
+  }
+@font-face {
+    font-family: 'ComicaB'; /* Give your font a name */
+    src: url('./fonts/Comica\ BD\ Bold.ttf') format('woff2'), /* Specify the path to your font file */
+         url('path/to/your/font.woff') format('woff'); /* You can provide multiple file formats for compatibility */
+  }
+
+
+.gallery{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+
+.photoo{
+    width: 90%;
+    max-width: 95%;
+}
+@media screen and (max-width:768px) {
+
+    .gallery{
+        flex-direction: column;
+    }
+
+    .photoo{
+        max-width: 95%;
+    }
+}
